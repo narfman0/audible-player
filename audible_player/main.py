@@ -4,7 +4,9 @@ import webview
 
 
 def main():
-    webview.create_window("Audible Player", "https://www.audible.com/library/titles")
+    webview.create_window(
+        "Audible Player", "https://www.audible.com/library/titles?filterBy=unfinished"
+    )
     webview.start(private_mode=False)
 
 
